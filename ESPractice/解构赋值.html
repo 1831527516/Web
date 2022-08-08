@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    //es6 允许按照一定模式从数组和对象中提取值，对变量进行赋值，这被称为解构赋值。
+    /* 理解；
+    从对象或数组中提取数据，并赋值给变量（多个）
+    */
+    //数组
+    const F4 = ['赵四', '刘能', '广志', '宋小宝'];
+    let [zhao, liu, guang, song] = F4;
+    console.log(zhao);
+    console.log(guang);
+    console.log(liu);
+    console.log(song);
+
+    console.log("============")
+
+    //对象
+    const QIAO = {
+        name: '桥本有菜',
+        age: '24',
+        zhiye: function () {
+            console.log('演员')
+        }
+    }
+    let {name, age,zhiye} = QIAO;
+    console.log(name)
+    console.log(age)
+    //console.log(zhiye)
+    zhiye()
+
+
+
+</script>
+<body>
+
+</body>
+</html>
